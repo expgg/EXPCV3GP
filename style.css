@@ -1,0 +1,248 @@
+/* Basic Reset & Body Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    background-color: #FFFDD0; /* Creamy White */
+    color: #3a3a3a; /* Darker gray for better readability */
+    margin: 0;
+    font-size: 16px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1024px; /* Slightly wider for a more spacious feel */
+    margin: auto;
+    padding: 25px 0;
+}
+
+/* Header Styling */
+.main-header {
+    background: linear-gradient(to bottom, #a0f0a0, #80e080); /* Light Green gradient */
+    color: #204e20; /* Darker Green for text */
+    padding: 30px 0;
+    text-align: center;
+    border-bottom: 4px solid #6fbf6f; /* Accent green */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.main-header h1 {
+    margin-bottom: 8px;
+    font-size: 2.8em;
+    font-weight: 600;
+}
+.main-header h1 .fas {
+    margin-right: 10px;
+    color: #2E8B57;
+}
+
+.main-header .tagline {
+    font-size: 1.2em;
+    color: #2E8B57; /* Sea Green */
+    font-style: italic;
+}
+
+/* Quick Download Section */
+.quick-download-section {
+    background-color: #f3fff3; /* Very light mint/cream */
+    padding: 35px 0;
+    text-align: center;
+    border-bottom: 1px solid #d0e0d0;
+}
+
+.quick-download-section h2 {
+    color: #2E8B57; /* Sea Green */
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+.quick-download-section h2 .fas {
+    margin-right: 8px;
+}
+
+.download-button {
+    display: inline-block;
+    background-color: #3CB371; /* Medium Sea Green */
+    color: #fff;
+    padding: 15px 30px; /* Larger button */
+    text-decoration: none;
+    border-radius: 8px; /* More rounded */
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    border: none; /* Remove border for cleaner look */
+}
+.download-button .fas {
+    margin-right: 8px;
+}
+
+.download-button:hover {
+    background-color: #2E8B57; /* Darker Sea Green */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.small-print {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 15px;
+}
+
+/* Card style for main content sections */
+.card {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border: 1px solid #e0e0e0;
+}
+
+main h2, main h3 {
+    color: #2E8B57; /* Sea Green */
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #98FB98; /* Pale Green accent */
+}
+main h2 .fas, main h3 .fas, main h4 .fas {
+    margin-right: 10px;
+    color: #3CB371;
+}
+
+main h4 { 
+    margin-top: 20px; 
+    font-size: 1.25em; 
+    color: #3CB371; /* Medium Sea Green */
+    margin-bottom: 10px;
+}
+
+main p {
+    margin-bottom: 1.2em;
+    color: #444;
+}
+
+main ul, main ol {
+    margin-left: 25px;
+    margin-bottom: 1.2em;
+}
+
+main ul li, main ol li {
+    margin-bottom: 0.6em;
+    padding-left: 5px;
+}
+main ul li::marker, main ol li::marker {
+    color: #3CB371;
+}
+.icon-feature { color: #2E8B57; margin-right: 8px; }
+.icon-component { color: #204e20; margin-right: 8px; }
+
+
+/* Why Low Res Section Specifics */
+.why-low-res-section .rationale-points {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.why-low-res-section .rationale-point {
+    background-color: #f9fdf9;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #98FB98; /* Pale Green accent */
+}
+.why-low-res-section .rationale-point h4 {
+    color: #2E8B57;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.why-low-res-section .rationale-point .icon-green {
+    color: #3CB371; /* Medium Sea Green */
+}
+.goal-emphasis {
+    font-weight: bold;
+    color: #204e20; /* Darker green */
+    background-color: #e8f8e8;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px dashed #3CB371;
+}
+
+
+/* Code Block Styling & Copy Button */
+.code-block-wrapper {
+    position: relative;
+    margin-bottom: 1em;
+}
+
+pre[class*="language-"] {
+    padding: 1.2em 1em; /* More padding */
+    margin: 0; /* Removed default margin as wrapper handles it */
+    overflow: auto;
+    border-radius: 6px;
+    background-color: #2d2d2d; /* Okaidia theme background */
+    font-size: 0.95em; /* Slightly larger code font */
+    border: 1px solid #444;
+}
+
+.copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8em;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+.copy-btn:hover {
+    background-color: #3CB371; /* Medium Sea Green */
+    opacity: 1;
+}
+.copy-btn .fas, .copy-btn .far { /* For Font Awesome icons inside button */
+    margin-right: 0; /* Reset margin if only icon is used */
+}
+
+
+/* Footer Styling */
+.main-footer {
+    background-color: #80e080; /* Lighter part of header gradient */
+    color: #204e20;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 40px;
+    border-top: 4px solid #6fbf6f;
+    font-size: 0.95em;
+}
+.main-footer p {
+    margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body { font-size: 15px; }
+    .main-header h1 { font-size: 2.2em; }
+    .quick-download-section h2 { font-size: 1.6em; }
+    .container { width: 95%; }
+    .card { padding: 20px; }
+    .why-low-res-section .rationale-points {
+        grid-template-columns: 1fr; /* Stack on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .main-header h1 { font-size: 1.9em; }
+    .main-header .tagline { font-size: 1em; }
+    .download-button { font-size: 1em; padding: 12px 20px; }
+    pre[class*="language-"] { font-size: 0.85em; }
+}
