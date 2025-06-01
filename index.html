@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXPLORIOT 3GP Converter - The Ultimate Blackout Entertainment Prep!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1><i class="fas fa-film"></i> EXPLORIOT Video to 3GP Converter</h1>
+            <p class="tagline">Be Prepared: Your Go-To Tool for Off-Grid Entertainment!</p>
+        </div>
+    </header>
+
+    <section class="quick-download-section">
+        <div class="container">
+            <h2><i class="fas fa-bolt"></i> Impatient? Just Want the Goods?</h2>
+            <p>If you're a busy dev (we get it!), or just wanna skip the build and ensure you're entertainment-ready for any situation:</p>
+            <a href="YOUR_DOWNLOAD_LINK_FOR_EXPCV3GP.exe" class="download-button"><i class="fas fa-download"></i> Download EXPCV3GP.exe Now!</a>
+            
+        </div>
+    </section>
+
+    <main class="container">
+        <article class="project-overview card">
+            <h2><i class="fas fa-info-circle"></i> What's This All About?</h2>
+            <p>Welcome! This isn't just another file converter. The <strong>EXPLORIOT Video to 3GP Converter</strong> is your lifeline to entertainment when the grid goes down. It’s a Python-powered command-line tool designed to transform your video library into ultra-compact .3gp files, ideal for low-power devices during blackouts or off-grid adventures.</p>
+            <p>This page documents how this tool was built, how it works, and most importantly, *why* it could be a crucial part of your preparedness kit.</p>
+        </article>
+
+        <section class="why-low-res-section card">
+            <h2><i class="fas fa-question-circle"></i> Why Convert to "Shitty" Resolution? The Blackout Entertainment Strategy!</h2>
+            <p>You might be thinking, "3GP? In this day and age of 4K streaming?" And you'd be right to ask! But this isn't about pixel-perfect quality; it's about <strong>resilience and access when nothing else works.</strong></p>
+            <div class="rationale-points">
+                <div class="rationale-point">
+                    <h4><i class="fas fa-power-off icon-green"></i> Blackout Entertainment Lifeline</h4>
+                    <p>When the power's out, your smart TV, high-speed internet, and streaming subscriptions are useless. What then? Silence? Boredom? Not if you're prepared!</p>
+                </div>
+                <div class="rationale-point">
+                    <h4><i class="fas fa-hdd icon-green"></i> Massive Library, Tiny Footprint</h4>
+                    <p>.3GP files are incredibly small. You can store literally <em>months</em> worth of movies, TV shows, or educational content on a single 100-200GB SD card. Try doing that with raw Blu-ray rips!</p>
+                </div>
+                <div class="rationale-point">
+                    <h4><i class="fas fa-battery-three-quarters icon-green"></i> The Power-Sipping Advantage</h4>
+                    <p>Your fancy smartphone with its gorgeous OLED screen will be a paperweight in a day or two during an extended outage. But an old-school <strong>button phone (feature phone)?</strong> Those things can last for <em>days, even weeks,</em> on a single charge, especially just playing back simple .3gp videos.</p>
+                </div>
+                <div class="rationale-point">
+                    <h4><i class="fas fa-solar-panel icon-green"></i> Power Bank Paradise</h4>
+                    <p>Combine that ultra-efficient button phone with a decent 10,000mAh or 20,000mAh power bank (maybe even a small solar charger), and you've got an entertainment setup that can run for an astonishingly long time. We're talking an entertainment loop that keeps on giving!</p>
+                </div>
+            </div>
+            <p class="goal-emphasis"><strong>The Main Goal:</strong> To ensure you (and your loved ones) have a reliable, long-lasting source of entertainment and information when conventional systems fail. It's about being self-sufficient and keeping spirits up. That's the EXPLORIOT way!</p>
+        </section>
+
+        <section class="features-section card">
+            <h3><i class="fas fa-cogs"></i> Key Features of the Tool</h3>
+            <ul>
+                <li><i class="fas fa-exchange-alt icon-feature"></i> Converts diverse video formats to .3GP.</li>
+                <li><i class="fas fa-mobile-alt icon-feature"></i> Optimized .3GP settings for feature phones (H.263 video, AAC audio).</li>
+                <li><i class="fas fa-terminal icon-feature"></i> User-friendly Command-Line Interface (CLI).</li>
+                <li><i class="fas fa-folder-open icon-feature"></i> Batch processes all videos in a chosen folder.</li>
+                <li><i class="fas fa-rocket icon-feature"></i> Parallel processing (up to 4 files at once!).</li>
+                <li><i class="fas fa-desktop icon-feature"></i> Dynamic window title and personalized welcome.</li>
+                <li><i class="fas fa-hand-pointer icon-feature"></i> Interactive prompts for easy operation and re-runs.</li>
+                <li><i class="fas fa-tasks icon-feature"></i> Detailed `rich` progress bars for overall and per-file status.</li>
+                <li><i class="fas fa-archive icon-feature"></i> Saves output to a neat 'EXPLORIOT 3GP CONV' subfolder.</li>
+                <li><i class="fas fa-file-signature icon-feature"></i> Customizable output filenames (`original_name expcv.3gp`).</li>
+                <li><i class="fas fa-box-open icon-feature"></i> Standalone `.exe` with FFmpeg included – no installs needed for users!</li>
+            </ul>
+        </section>
+
+        <section class="getting-started-scratch card">
+            <h2><i class="fas fa-hammer"></i> Building It From Scratch: The Full Guide</h2>
+            <p>Ready to dive in and build this converter yourself? Let's go! Here's the roadmap.</p>
+
+            <h3><i class="fas fa-list-check"></i> Prerequisites:</h3>
+            <ol>
+                <li><strong>Python 3.x:</strong> From <a href="https://www.python.org/downloads/" target="_blank">python.org</a> (ensure "Add Python to PATH" is checked).</li>
+                <li><strong>FFmpeg:</strong> The video processing engine.
+                    <ul>
+                        <li>Get it from <a href="https://ffmpeg.org/download.html" target="_blank">ffmpeg.org</a> (gyan.dev Windows builds recommended).</li>
+                        <li>Extract and add its `bin` folder to your system PATH.</li>
+                    </ul>
+                </li>
+                <li><strong>Python Libraries:</strong> Install via pip:
+                    <div class="code-block-wrapper">
+                        <pre><code class="language-bash">pip install rich pyinstaller</code></pre>
+                        <button class="copy-btn" title="Copy to clipboard"><i class="far fa-copy"></i> Copy</button>
+                    </div>
+                </li>
+            </ol>
+
+            <h3><i class="fab fa-python"></i> Step 1: The Python Script (`exploriot_converter.py`)</h3>
+            <p>This is the brain of the operation. The full code is below, designed for functionality and to be bundled with PyInstaller.</p>
+            
+            <div class="code-block-container">
+                <h4>Full Python Code:</h4>
+                <div class="code-block-wrapper">
+                    <pre><code class="language-python">
+#!/usr/bin/env python3
+
+import os
+import subprocess
+import shutil # For checking if ffmpeg is in PATH
+import argparse
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from pathlib import Path
+import time # For timing conversions
+import ctypes # For setting window title on Windows
+import sys # For PyInstaller path detection
+
+from rich.console import Console
+from rich.progress import Progress, BarColumn, TextColumn, TimeRemainingColumn, TimeElapsedColumn
+from rich.text import Text
+from rich.panel import Panel
+from rich.prompt import Prompt
+
+# --- Configuration ---
+APP_NAME = "EXPLORIOT Video Converter"
+APP_TITLE_BASE = "EXPLORIOT Video Converter" # For the window title
+OUTPUT_SUBFOLDER = "EXPLORIOT 3GP CONV"
+OUTPUT_SUFFIX = " expcv.3gp"
+MAX_WORKERS = 4
+
+SUPPORTED_EXTENSIONS = [
+    ".mp4", ".mkv", ".mov", ".avi", ".wmv", ".flv", ".webm", ".mpeg",
+    ".mpg", ".ts", ".vob", ".mts", ".m2ts", ".asf", ".divx", ".ogv", ".3gp"
+]
+
+# Base FFmpeg arguments
+FFMPEG_COMMAND_ARGS_BASE = [
+    "-vcodec", "h263",
+    "-s", "176x144",
+    "-r", "15",
+    "-vb", "140k",
+    "-acodec", "aac",
+    "-ab", "64k",
+    "-ar", "22050",
+    "-ac", "1",
+]
+# Add extra arguments like -threads here
+FFMPEG_EXTRA_ARGS = ["-threads", "2"] # Example: Suggests 2 threads for FFmpeg. Adjust as needed.
+FFMPEG_COMMAND_ARGS = FFMPEG_EXTRA_ARGS + FFMPEG_COMMAND_ARGS_BASE
+# ---------------------
+
+console = Console()
+_FFMPEG_PATH_CACHE = None # Global cache for the determined FFmpeg path
+
+def get_ffmpeg_executable_path():
+    """Determines the path to the FFmpeg executable, prioritizing bundled version."""
+    global _FFMPEG_PATH_CACHE
+    if _FFMPEG_PATH_CACHE is not None:
+        return _FFMPEG_PATH_CACHE
+
+    if getattr(sys, 'frozen', False) and hasattr(sys, '_MEIPASS'):
+        # Running in a PyInstaller bundle (sys.frozen is True)
+        bundle_dir = Path(sys._MEIPASS)
+        ffmpeg_exe = bundle_dir / 'ffmpeg.exe'
+        if ffmpeg_exe.is_file():
+            _FFMPEG_PATH_CACHE = str(ffmpeg_exe)
+            return _FFMPEG_PATH_CACHE
+        else:
+            _FFMPEG_PATH_CACHE = "ffmpeg_not_found_in_bundle" 
+            return _FFMPEG_PATH_CACHE
+    else:
+        # Running as a normal script
+        _FFMPEG_PATH_CACHE = "ffmpeg" 
+        return _FFMPEG_PATH_CACHE
+
+def set_window_title(title: str):
+    """Sets the console window title (Windows only)."""
+    if os.name == 'nt':
+        try:
+            ctypes.windll.kernel32.SetConsoleTitleW(title)
+        except Exception:
+            pass # Silently fail
+
+def get_pc_username():
+    """Gets the current PC username."""
+    try:
+        username = os.getlogin()
+    except OSError:
+        username = os.environ.get('USERNAME', os.environ.get('USER', 'User'))
+    return username if username else "Valued User"
+
+def print_brand_header():
+    """Prints a branded header with the dynamic username."""
+    username = get_pc_username()
+    header_text = Text(APP_NAME, style="bold magenta on black")
+    console.print(Panel(header_text, expand=False, border_style="green"))
+    console.print(f"--- Welcome, [bold cyan]{username}[/bold cyan]! ---", style="bold yellow")
+
+def check_ffmpeg():
+    """Checks if FFmpeg is found (bundled or in PATH)."""
+    ffmpeg_exe_to_check = get_ffmpeg_executable_path()
+    if shutil.which(ffmpeg_exe_to_check) is None:
+        console.print("[bold red]Error: FFmpeg not found or not correctly bundled.[/bold red]")
+        if ffmpeg_exe_to_check == "ffmpeg_not_found_in_bundle":
+            console.print("[dim]It seems FFmpeg was not found within the application package.[/dim]")
+        else:
+            console.print("[dim]Please install FFmpeg and ensure it's in your system's PATH, or ensure it's bundled with this application.[/dim]")
+        console.print("You can download FFmpeg from: [link=https://ffmpeg.org/download.html]https://ffmpeg.org/download.html[/link]")
+        return False
+    return True
+
+def find_video_files(input_folder_path: Path):
+    video_files = []
+    console.print(f"\n:mag: Searching for video files in: [cyan]{input_folder_path}[/cyan]")
+    for item in input_folder_path.iterdir():
+        if item.is_file() and item.suffix.lower() in SUPPORTED_EXTENSIONS:
+            video_files.append(item)
+    if not video_files:
+        console.print(f"[yellow]No supported video files found in {input_folder_path}.[/yellow]")
+        console.print(f"Supported types: {', '.join(SUPPORTED_EXTENSIONS)}")
+    else:
+        console.print(f"[green]:heavy_check_mark: Found {len(video_files)} video file(s).[/green]")
+    return video_files
+
+def convert_video(video_path: Path, output_folder_path: Path, progress: Progress, task_id):
+    base_filename = video_path.stem
+    output_filename = base_filename + OUTPUT_SUFFIX
+    output_file_path = output_folder_path / output_filename
+    output_folder_path.mkdir(parents=True, exist_ok=True)
+
+    ffmpeg_actual_path = get_ffmpeg_executable_path() # Get the correct path for FFmpeg
+
+    command = [
+        ffmpeg_actual_path,
+        "-y",
+        "-i", str(video_path),
+        *FFMPEG_COMMAND_ARGS,
+        str(output_file_path)
+    ]
+
+    start_time = time.monotonic()
+    progress.update(task_id, description=f"[yellow]Converting: {video_path.name}[/yellow]", completed=0) 
+
+    try:
+        process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        stdout, stderr = process.communicate()
+        elapsed_time = time.monotonic() - start_time
+
+        if process.returncode == 0:
+            progress.update(task_id, advance=1, description=f"[green]Completed: {video_path.name} (in {elapsed_time:.2f}s)[/green]")
+            return True, video_path.name, None, elapsed_time
+        else:
+            error_message = f"Error converting {video_path.name}:\n{stderr.strip()}"
+            progress.update(task_id, advance=1, description=f"[red]Failed: {video_path.name} (after {elapsed_time:.2f}s)[/red]")
+            return False, video_path.name, error_message, elapsed_time
+    except FileNotFoundError:
+        elapsed_time = time.monotonic() - start_time
+        progress.update(task_id, advance=1, description=f"[red]FFMPEG_NOT_FOUND: {video_path.name}[/red]")
+        return False, video_path.name, "FFmpeg executable not found during conversion.", elapsed_time
+    except Exception as e:
+        elapsed_time = time.monotonic() - start_time
+        progress.update(task_id, advance=1, description=f"[red]Error: {video_path.name}[/red]")
+        return False, video_path.name, str(e), elapsed_time
+
+def process_folder(input_folder_path_str: str):
+    """Processes a single folder of videos."""
+    set_window_title(f"{APP_TITLE_BASE} - Working on '{Path(input_folder_path_str).name}'...")
+    input_folder = Path(input_folder_path_str).resolve()
+
+    if not input_folder.is_dir():
+        console.print(f"[bold red]Error: Input path '{input_folder}' is not a valid directory or does not exist.[/bold red]")
+        return False
+
+    video_files_to_convert = find_video_files(input_folder)
+
+    if not video_files_to_convert:
+        console.print("No videos to convert in this folder.", style="yellow")
+        return True 
+
+    output_main_folder = input_folder / OUTPUT_SUBFOLDER
+    try:
+        output_main_folder.mkdir(parents=True, exist_ok=True)
+        console.print(f"Output will be saved in: [cyan]{output_main_folder}[/cyan]")
+    except OSError as e:
+        console.print(f"[bold red]Error creating output directory {output_main_folder}: {e}[/bold red]")
+        return False
+
+    successful_conversions = 0
+    failed_conversions = 0
+    total_time_spent_converting = 0
+    error_details = []
+
+    with Progress(
+        TextColumn("[progress.description]{task.description}"),
+        BarColumn(),
+        TextColumn("[progress.percentage]{task.percentage:>3.0f}%"),
+        TimeElapsedColumn(),
+        TimeRemainingColumn(),
+        console=console,
+        transient=False
+    ) as progress:
+        overall_task_description = f"[blue]Overall Progress ({len(video_files_to_convert)} files in '{input_folder.name}')...[/blue]"
+        overall_task = progress.add_task(overall_task_description, total=len(video_files_to_convert))
+        
+        file_tasks_map = {}
+        for video_file in video_files_to_convert:
+            task_id = progress.add_task(f"[grey50]Queued: {video_file.name}[/grey50]", total=1, start=False)
+            file_tasks_map[video_file] = task_id
+
+        with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+            futures_map = {} 
+            for video_file in video_files_to_convert:
+                file_task_id = file_tasks_map[video_file]
+                progress.start_task(file_task_id) 
+                future = executor.submit(convert_video, video_file, output_main_folder, progress, file_task_id)
+                futures_map[future] = (file_task_id, video_file)
+            
+            for future in as_completed(futures_map):
+                file_task_id, original_video_file = futures_map[future]
+                try:
+                    success, filename_from_func, error_msg, elapsed_time = future.result() 
+                    if success:
+                        successful_conversions += 1
+                        total_time_spent_converting += elapsed_time
+                    else:
+                        failed_conversions += 1
+                        error_details.append(f"File: {filename_from_func} - Error: {error_msg}")
+                except Exception as e:
+                    failed_conversions += 1
+                    error_details.append(f"File: {original_video_file.name} - Critical error during processing: {str(e)}")
+                    progress.update(file_task_id, description=f"[bold red]CRITICAL ERROR: {original_video_file.name}[/bold red]", advance=1)
+                progress.update(overall_task, advance=1)
+
+    console.print("\n--- [bold magenta]Folder Conversion Complete![/bold magenta] ---")
+    console.print(f"Folder: [cyan]{input_folder.name}[/cyan]")
+    console.print(f"[green]Successfully converted: {successful_conversions} file(s)[/green]")
+    if failed_conversions > 0:
+        console.print(f"[red]Failed to convert: {failed_conversions} file(s)[/red]")
+        if Prompt.ask("[yellow]Do you want to see error details for this folder? (y/n)[/yellow]", choices=["y", "n"], default="n", console=console) == "y":
+            for detail in error_details:
+                console.print(f"  - {detail}", style="dim red")
+    
+    if successful_conversions > 0:
+        console.print(f"Total CPU time effectively spent on successful conversions in this folder: {total_time_spent_converting:.2f} seconds.", style="dim")
+    console.print(f"Converted files are in: [bold cyan]{output_main_folder}[/bold cyan]")
+    set_window_title(f"{APP_TITLE_BASE} - Waiting for input")
+    return True
+
+def main():
+    """Main function to drive the converter with a loop."""
+    set_window_title(APP_TITLE_BASE) # Initial title
+    print_brand_header()
+    
+    if not check_ffmpeg():
+        console.input("[red]Press Enter to exit.[/red]") # Keep window open to see error
+        return
+
+    parser = argparse.ArgumentParser(description=f"{APP_NAME} - Convert videos to .3gp.")
+    parser.add_argument("input_folder", type=str, nargs='?', help="Path to the folder containing video files (optional).")
+    args = parser.parse_args()
+    
+    current_input_folder_str = args.input_folder
+
+    while True:
+        if not current_input_folder_str:
+            console.print("-" * 50, style="dim")
+            current_input_folder_str = Prompt.ask("\n[bold yellow]Enter the path to your video folder (or type 'quit' to exit)[/bold yellow]", console=console)
+        
+        if current_input_folder_str.lower().strip() == 'quit':
+            console.print("Thanks for using EXPLORIOT! Stay awesome!", style="bold green")
+            break
+
+        process_folder(current_input_folder_str)
+        current_input_folder_str = None # Reset for the next loop iteration to prompt again
+        
+        console.print("-" * 50, style="dim")
+        if Prompt.ask("\n[bold green]Do you want to convert videos from another folder? (y/n)[/bold green]", choices=["y", "n"], default="y", console=console) == "y":
+            console.clear() # Optional: clear screen for next batch
+            print_brand_header() # Reprint header for fresh look
+        else:
+            console.print("Thanks for using EXPLORIOT! Stay awesome!", style="bold green")
+            break
+    
+    set_window_title(f"{APP_TITLE_BASE} - Exited")
+    # No explicit "Press Enter to exit" here, as the script naturally ends. 
+    # If run from cmd, cmd stays open. If run by double-clicking, console might close fast.
+    # To ensure it stays open if double-clicked and there were no errors:
+    # console.input("[dim]Processing finished. Press Enter to exit.[/dim]")
+
+
+if __name__ == "__main__":
+    main()
+                    </code></pre>
+                    <button class="copy-btn" title="Copy to clipboard"><i class="far fa-copy"></i> Copy</button>
+                </div>
+                <p class="small-print">(Note: The Python code presented above is a functional representation. Some repetitive parts or very detailed error handling might be slightly condensed for readability on this page. The core logic is all there!)</p>
+            </div>
+
+            <h4>Key Python Script Components Explained:</h4>
+            <p>A quick rundown of the heroes in our script:</p>
+            <ul>
+                <li><i class="fas fa-puzzle-piece icon-component"></i> <strong>Core Modules:</strong> `os`, `subprocess`, `shutil`, `argparse`, `concurrent.futures`, `pathlib`, `time`, `ctypes`, `sys` all play vital roles from running FFmpeg to managing files and user input.</li>
+                <li><i class="fas fa-paint-brush icon-component"></i> <strong>`rich` Library:</strong> This is the star for making our command-line interface look amazing with colors, progress bars, and styled text.</li>
+                <li><i class="fas fa-cogs icon-component"></i> <strong>`get_ffmpeg_executable_path()`:</strong> Super important for finding `ffmpeg.exe`, especially when the app is bundled into an EXE.</li>
+                <li><i class="fas fa-video icon-component"></i> <strong>`convert_video()`:</strong> The heart of the conversion, calling FFmpeg for each file.</li>
+                <li><i class="fas fa-folder-tree icon-component"></i> <strong>`process_folder()`:</strong> Manages batch conversion for a folder, using threads for speed.</li>
+                <li><i class="fas fa-running icon-component"></i> <strong>`main()`:</strong> Orchestrates the whole show, including the loop to convert more folders.</li>
+            </ul>
+        </section>
+
+        <section class="bundling-exe-section card">
+            <h3><i class="fas fa-box"></i> Step 2: Creating the Standalone `.exe`</h3>
+            <p>With your script polished, use PyInstaller to package it into a single, portable `.exe`.</p>
+            <ol>
+                <li><strong>Files Needed:</strong> Your final `exploriot_converter.py`, `ffmpeg.exe` (static build), and your custom `.ico` icon file (e.g., `exploriot_icon.ico`). Put them in one folder.</li>
+                <li><strong>PyInstaller Command:</strong> Open Command Prompt, `cd` to that folder, and run:
+                    <div class="code-block-wrapper">
+                        <pre><code class="language-bash">
+pyinstaller --name EXPCV3GP --onefile --add-binary "ffmpeg.exe:." --icon="exploriot_icon.ico" exploriot_converter.py
+                        </code></pre>
+                        <button class="copy-btn" title="Copy to clipboard"><i class="far fa-copy"></i> Copy</button>
+                    </div>
+                    (Adjust filenames if yours are different).
+                </li>
+                <li><strong>Result:</strong> Find your `EXPCV3GP.exe` in the `dist` subfolder!</li>
+            </ol>
+        </section>
+
+        <section class="usage-section card">
+            <h3><i class="fas fa-play-circle"></i> How to Use the `EXPCV3GP.exe`</h3>
+            <ol>
+                <li>Just double-click `EXPCV3GP.exe`. No installation needed!</li>
+                <li>It'll greet you and ask for the folder containing your videos.</li>
+                <li>Enter the path, hit Enter, and watch the conversion magic.</li>
+                <li>Converted files appear in the `EXPLORIOT 3GP CONV` subfolder.</li>
+                <li>The app will then ask if you want to process another folder.</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024-2025 EXPLORIOT. Built for resilience, by a dev for devs (and savvy users!).</p>
+            <p>Keep exploring, keep creating!</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
